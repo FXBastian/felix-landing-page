@@ -13,6 +13,68 @@
   --gray: #64748b;
 }
 
+/* Custom local fonts */
+@font-face {
+  font-family: 'Universidad';
+  src: url('assets/font/universidad-personal-use/UNIVERSIDAD PERSONAL USE.ttf') format('truetype');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dasport';
+  src: url('assets/font/dasport-demo/Dasport  DEMO.otf') format('opentype');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Section typography using the provided fonts with 3D/shadow effects */
+.section-label {
+  font-family: 'Dasport', 'Inter', sans-serif;
+  color: var(--green-2);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 900;
+  text-shadow: 0 3px 0 rgba(0,0,0,0.65), 0 8px 18px rgba(0,0,0,0.45);
+}
+
+.section h2 {
+  font-family: 'Universidad', 'Graduate', serif;
+  text-transform: uppercase;
+  color: var(--white);
+  -webkit-text-stroke: 1px var(--blue-dark);
+  /* layered text-shadow to create a 3D extrusion effect */
+  text-shadow:
+    0 1px 0 rgba(15,23,42,0.9),
+    0 2px 0 rgba(15,23,42,0.85),
+    0 4px 0 rgba(15,23,42,0.8),
+    0 8px 12px rgba(0,0,0,0.6),
+    0 0 18px rgba(59,130,246,0.12);
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Slight 3D tilt and glow for section headings on hover */
+.section h2:hover {
+  transform: translateY(-4px) rotateX(4deg);
+  transition: transform 0.35s ease, text-shadow 0.35s ease;
+  text-shadow:
+    0 2px 0 rgba(15,23,42,0.95),
+    0 6px 0 rgba(15,23,42,0.9),
+    0 14px 22px rgba(0,0,0,0.65),
+    0 0 26px rgba(59,130,246,0.18);
+}
+
+/* Apply speciality fonts for specific small headings where appropriate */
+.vitrine-info h3,
+.showcase-card h3,
+.hero h1 {
+  font-family: 'Dasport', 'Universidad', 'Graduate', serif;
+}
+
+
 
 * {
   box-sizing: border-box;
