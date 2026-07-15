@@ -3,7 +3,7 @@
   --green-2: #23c174;
   --dark: #06100c;
   --black: #020403;
-  --white: #fff;
+  --white: #d1f0cf;
   --muted: #cfd8d2;
   --card: rgba(255, 255, 255, .08);
   --border: rgba(255, 255, 255, .16);
@@ -382,10 +382,11 @@ img {
 }
 
 .hero h1 {
-  font-size: clamp(3.2rem, 8vw, 7rem);
+  font-size: clamp(3.2rem, 7vw, 5rem);
   line-height: .9;
   margin: 14px 0;
   font-weight: 900;
+  padding-top: 30px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
   color: var(--white);
