@@ -68,11 +68,7 @@
 }
 
 /* Apply speciality fonts for specific small headings where appropriate */
-.vitrine-info h3,
-.showcase-card h3,
-.hero h1 {
-  font-family: 'Dasport', 'Universidad', 'Graduate', serif;
-}
+
 
 
 
